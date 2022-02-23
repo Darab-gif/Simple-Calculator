@@ -174,3 +174,11 @@
         margin-left: 16px;
     }
 }
+
+
+@media (max-width: 600px){
+    .calBody{
+        width: 45%;
+        height: 75%;
+    }
+}
