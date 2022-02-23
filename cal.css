@@ -1,0 +1,158 @@
+.calBody{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    background: #222;
+    height: 72%;
+    width: 18%;
+    transform: translate(-50%, -50%);
+    border-radius: 38px;
+}
+
+.screen{
+    position: relative;
+    height: 165px;
+    width: 82%;
+    background: inherit;
+    margin: 40px 0px 0px 20px;
+    color: #999;
+    text-align: right;
+    
+}
+
+.para{
+    position: absolute;
+    right: 10px;
+    bottom: 40%;
+    font-size: 20px;
+    font-weight: 500;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: column;
+    word-wrap: break-word;
+    word-break: break-all;
+    overflow: hidden;
+
+}
+
+.displayResult{
+    position: absolute;
+    right: 4px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    bottom: 7%;
+    height: 55px;
+    width: 90%;
+    background: inherit;
+    font-size: 26px;
+    font-weight: bolder;
+    word-wrap: break-word;
+    word-break: break-all;
+    display: flex;
+    align-items: flex-end;
+    flex-direction: row-reverse;
+}
+
+.display .sign{
+    width: 20px;
+    height: 20px;
+    background: #999;
+    display: inline-block;
+    padding: 10px;
+    text-align: center;
+    cursor: pointer;
+    margin: 20px 0px 0px 10px;
+    border-radius: 10px;
+    color: #ddd;
+    font-size: 16px;
+    font-weight: 600;
+    box-shadow: 2px -3px 10px #333,
+                -2px -3px 10px #111;
+}
+
+.display .number{
+    width: 20px;
+    height: 20px;
+    background: #000;
+    color: #ddd;
+    border-radius: 10px;
+    text-align: center;
+    cursor: pointer;
+    display: inline-block;
+    padding: 10px;
+    margin: 5px 0px 0px 10px;
+    box-shadow: 2px -3px 10px #222,
+                -2px -3px 10px #333;
+}
+
+.display .operator{
+    width: 20px;
+    height: 20px;
+    background: rgb(230, 150, 30);
+    color: #ddd;
+    text-align: center;
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    font-weight: 900;
+    transition: 0.6s;
+    margin: 4px 0px 0px 10px;
+    cursor: pointer;
+    border-radius: 10px;
+    box-shadow: 3px -2px 4px #333,
+                -3px -2px 4px #111;
+}
+
+.result{
+    width: 20px;
+    height: 20px;
+    background: rgb(230, 150, 30);
+    color: #ddd;
+    display: inline-block;
+    padding: 10px;
+    font-size: 18px;
+    text-align: center;
+    border-radius: 10px;
+    margin: 4px 0px 0px 10px;
+    cursor: pointer;
+}
+
+.display{
+    margin-left: 17px;
+}
+
+.display .number.zero{
+    width: 76px;
+}
+
+.head{
+    color: #eee;
+    position: fixed;
+    top: 10px;
+    left: 12px;
+    font-size: 14px;
+    font-weight: bolder;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.head span{
+    font-size: 16px;
+    font-weight: bold;
+    font-family: cursive;
+    position: absolute;
+    top: 12px;
+    left: 50px;
+}
+
+@media screen and (min-width: 480px) {
+    .calBody{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        background: #222;
+        height: 72%;
+        width: 18%;
+        transform: translate(-50%, -50%);
+        border-radius: 38px;
+    }
+}
