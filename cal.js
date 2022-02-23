@@ -25,6 +25,9 @@ class Calculator{
         this.prevOutput=this.newOutput;
         this.newOutput="";
     }
+    percent(){
+        return this.newOutput=this.newOutput / 100;
+    }
     calculate(){
         let total;
         let prev=parseFloat(this.prevOutput);
@@ -91,6 +94,7 @@ const current=document.querySelector("[data-output]");
 const clear=document.querySelector("[data-clear]");
 const del=document.querySelector("[data-delete]");
 const result=document.querySelector("[data-equal]");
+const sign=document.querySelector("[data-sign]");
 
 const calculator=new Calculator(history, current);
 
@@ -122,4 +126,9 @@ result.addEventListener("click", ev=>{
     calculator.calculate();
     calculator.display();
 });
+
+sign.addEventListener("click", ()=>{
+    calculator.percent();
+    calculator.display();
+})
 
