@@ -142,20 +142,31 @@
     position: absolute;
     top: 12px;
     left: 50px;
-}
+};
+
+
 
 @media (max-width: 480px){
     .calBody{
-        width: 53%;
+        min-width: 35%;
+        height: 75%;
+    }
+    
+}
+
+@media (min-width: 481px) and (max-width: 767px){
+    .calBody{
+        width: 45%;
         height: 75%;
     }
 }
 
-
 @media (min-width: 768px) and (max-width: 1024px){
     .calBody{
-        width: 30%;
+        width: 25%;
+        height: 75%;
     }
+    
 }
 
 
@@ -164,21 +175,5 @@
         width: 25%;
         height: 75%;
     }
-}
-
-@media (max-width: 380px){
-    .calBody{
-        width: 72%;
-    }
-    .display{
-        margin-left: 16px;
-    }
-}
-
-
-@media (max-width: 600px){
-    .calBody{
-        width: 45%;
-        height: 75%;
-    }
+    
 }
