@@ -167,10 +167,10 @@
 }
 
 @media (max-width: 380px){
-    body{
-        background-color: blue;
-    }
     .calBody{
-        width: 75%;
+        width: 72%;
+    }
+    .display{
+        margin-left: 10px;
     }
 }
