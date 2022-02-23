@@ -1,48 +1,49 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="utf-8.0">
-        <meta name="viewport" content="width=device-width">
-        <title>Basic Calculator</title>
-        <link rel="stylesheet" href="./cal.css">
-    </head>
-    <body>
-        <div class="calBody">
-            <div class="head">Darab <span>Calculator</span></div>
-            <div class="screen" name="screen">
-                <div data-history class="para" id="input" name="display"></div>
-                <div data-output class="displayResult" id="displayResult"></div>
-            </div>
-            <div class="display">
-                <div data-clear class="sign" id="clear">C</div>
-                <div data-delete class="sign" id="backspace">CE</div>
-                <div data-sign class="sign">%</div>
-                <div data-operator class="operator" id="/">&divide;</div>
-            </div>
-            <div class="display">
-                <div data-number  class="number ">7</div>
-                <div data-number class="number">8</div>
-                <div data-number class="number">9</div>
-                <div data-operator class="operator">&times;</div>
-            </div>
-            <div class="display">
-                <div data-number class="number">4</div>
-                <div data-number class="number">5</div>
-                <div data-number class="number">6</div>
-                <div data-operator class="operator">&minus;</div>
-            </div>
-            <div class="display">
-                <div data-number class="number">1</div>
-                <div data-number class="number">2</div>
-                <div data-number class="number">3</div>
-                <div data-operator class="operator" id="+">+</div>
-            </div>
-            <div class="display">
-                <div data-number class="number zero">0</div>
-                <div data-number class="number">.</div>
-                <div data-equal class="operator" id="result">=</div>
-            </div>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Darab Calculator</title>
+    <link rel="stylesheet" href="./cal.css">
+</head>
+<body>
+    <div class="calBody">
+        <div class="head">Darab <span>Calculator</span></div>
+        <div class="screen" name="screen">
+            <div data-history class="para" id="input" name="display"></div>
+            <div data-output class="displayResult" id="displayResult"></div>
         </div>
-        <script src="./cal.js"></script>
-    </body>
+        <div class="display">
+            <div data-clear class="sign" id="clear">C</div>
+            <div data-delete class="sign" id="backspace">CE</div>
+            <div data-sign class="sign">%</div>
+            <div data-operator class="operator" id="/">&divide;</div>
+        </div>
+        <div class="display">
+            <div data-number  class="number ">7</div>
+            <div data-number class="number">8</div>
+            <div data-number class="number">9</div>
+            <div data-operator class="operator">&times;</div>
+        </div>
+        <div class="display">
+            <div data-number class="number">4</div>
+            <div data-number class="number">5</div>
+            <div data-number class="number">6</div>
+            <div data-operator class="operator">&minus;</div>
+        </div>
+        <div class="display">
+            <div data-number class="number">1</div>
+            <div data-number class="number">2</div>
+            <div data-number class="number">3</div>
+            <div data-operator class="operator" id="+">+</div>
+        </div>
+        <div class="display">
+            <div data-number class="number zero">0</div>
+            <div data-number class="number">.</div>
+            <div data-equal class="operator" id="result">=</div>
+        </div>
+    </div>
+    <script src="./cal.js"></script>
+</body>
 </html>

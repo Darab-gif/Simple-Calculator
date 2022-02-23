@@ -144,22 +144,23 @@
     left: 50px;
 }
 
-@media screen and (max-width: 480px){
+@media (max-width: 480px){
     .calBody{
-        min-width: 52%;
+        width: 53%;
         height: 75%;
     }
 }
 
-@media screen and (min-width: 1024px){
-    .calBody{
-        width: 18%;
-        height: 75%;
-    }
-}
-
-@media only screen and (min-width: 767px) and (max-width: 900px){
+@media (min-width: 768px) and (max-width: 1024px){
     .calBody{
         width: 30%;
+    }
+}
+
+
+@media (min-width: 1025px) and (max-width: 1280px){
+    .calBody{
+        width: 25%;
+        height: 75%;
     }
 }
