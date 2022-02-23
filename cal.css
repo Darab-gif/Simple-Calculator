@@ -144,15 +144,16 @@
     left: 50px;
 }
 
-@media screen and (min-width: 480px) {
+@media only screen and (max-width: 600px){
     .calBody{
-        position: absolute;
-        top: 50%;
-        left: 50%;
-        background: #222;
-        height: 72%;
-        width: 18%;
-        transform: translate(-50%, -50%);
-        border-radius: 38px;
+        min-width: 50%;
+        height: 75%;
+    }
+}
+
+@media only screen and (min-width: 600px){
+    .calBody{
+        min-width: 24%;
+        height: 75%;
     }
 }
