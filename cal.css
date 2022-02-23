@@ -151,6 +151,7 @@
     }
 }
 
+
 @media (min-width: 768px) and (max-width: 1024px){
     .calBody{
         width: 30%;
@@ -162,5 +163,14 @@
     .calBody{
         width: 25%;
         height: 75%;
+    }
+}
+
+@media (max-width: 380px){
+    body{
+        background-color: blue;
+    }
+    .calBody{
+        width: 75%;
     }
 }
