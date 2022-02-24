@@ -54,20 +54,21 @@ class Calculator{
         this.prevOutput="";
     }
     displayNumber(number){
-        let strNum=number.toString();
+        let strNum= number.toString();
         let digit=parseFloat(strNum.split(".")[0]);
         let decimal=strNum.split(".")[1];
 
         let show;
+
         if(isNaN(digit)){
-            show="";
+            show=""
         }
         else{
-            show= digit.toLocaleString("en", {
+            show=digit.toLocaleString("en", {
                 maximumFractionDigits: 0
             });
         }
-        if(decimal != ""){
+        if(decimal != null){
             return `${show}.${decimal}`
         }
         else{
@@ -75,11 +76,11 @@ class Calculator{
         }
     }
     display(){
-        this.current.innerHTML= this.newOutput;
-        this.history.innerHTML=this.prevOutput;
+        this.current.innerHTML= this.displayNumber(this.newOutput);
+        this.history.innerHTML=this.displayNumber(this.prevOutput);
         if(this.operation != null){
             this.history.innerHTML=
-            `${this.prevOutput} ${this.operation}`;
+            `${this.displayNumber(this.prevOutput)} ${this.operation}`;
         }
     }
 }

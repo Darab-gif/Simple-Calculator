@@ -1,13 +1,30 @@
+*,
+*:before,
+*:after{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    font-family: arial;
+    background: #e0e0e0;
+}
+
 .calBody{
+    width: 5%;
+    min-height: 450px;
+    min-width: 300px;
+    background: #333;
+    border-radius: 38px;
     position: absolute;
+    transform: translate(-50%,-50%);
     top: 50%;
     left: 50%;
-    background: #222;
-    height: 72%;
-    width: 18%;
-    transform: translate(-50%, -50%);
-    border-radius: 38px;
+    box-shadow: 6px -6px 8px #9d9d9d,
+                -6px 6px 8px #ffffff;
 }
+
 
 .screen{
     position: relative;
@@ -53,76 +70,80 @@
     flex-direction: row-reverse;
 }
 
+
+.display{
+    padding: 0px 40px;
+    position: relative;
+    margin: 10px 0px;
+}
 .display .sign{
-    width: 20px;
-    height: 20px;
+    width: 40px;
+    height: 40px;
     background: #999;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     text-align: center;
     cursor: pointer;
-    margin: 20px 0px 0px 10px;
+    margin: 5px 0px 0px 10px;
     border-radius: 10px;
     color: #ddd;
     font-size: 16px;
     font-weight: 600;
     box-shadow: 2px -3px 10px #333,
-                -2px -3px 10px #111;
+                -2px 3px 10px #111;
 }
 
 .display .number{
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     background: #000;
     color: #ddd;
     border-radius: 10px;
     text-align: center;
     cursor: pointer;
     display: inline-block;
-    padding: 10px;
-    margin: 5px 0px 0px 10px;
+    padding: 15px;
+    margin: 5px 0px 0px 5px;
     box-shadow: 2px -3px 10px #222,
-                -2px -3px 10px #333;
+                -2px 3px 10px #333;
 }
 
 .display .operator{
-    width: 20px;
-    height: 20px;
+    width: 45px;
+    height: 45px;
     background: rgb(230, 150, 30);
     color: #ddd;
     text-align: center;
     display: inline-block;
-    padding: 10px;
+    padding: 15px;
     font-size: 18px;
     font-weight: 900;
     transition: 0.6s;
-    margin: 4px 0px 0px 10px;
+    margin-top: 3px;
     cursor: pointer;
+    margin-left: 8px;
     border-radius: 10px;
     box-shadow: 3px -2px 4px #333,
-                -3px -2px 4px #111;
+                -3px 2px 4px #111;
 }
 
-.result{
-    width: 20px;
-    height: 20px;
+.display .operator.result{
+    width: 45px;
+    height: 45px;
     background: rgb(230, 150, 30);
     color: #ddd;
     display: inline-block;
-    padding: 10px;
+    padding: 13px;
     font-size: 18px;
     text-align: center;
     border-radius: 10px;
-    margin: 4px 0px 0px 10px;
+    margin: 6px 0px 0px 10px;
     cursor: pointer;
 }
 
-.display{
-    margin-left: 17px;
-}
-
 .display .number.zero{
-    width: 76px;
+    width: 80px;
+    margin-left: 20px;
 }
 
 .head{
@@ -137,50 +158,9 @@
 
 .head span{
     font-size: 16px;
-    font-weight: bold;
+     font-weight: bold;
     font-family: cursive;
     position: absolute;
     top: 12px;
     left: 50px;
 };
-
-
-
-@media screen and (max-width: 480px){
-    .calBody{
-        min-width: 35%;
-        height: 75%;
-    }
-    
-}
-
-@media only screen and (max-width: 600px){
-    .calBody{
-        width: 55%;
-    }
-}
-
-@media screen and (min-width: 481px) and (max-width: 767px){
-    .calBody{
-        width: 45%;
-        height: 75%;
-    }
-}
-
-
-@media screen and (min-width: 768px) and (max-width: 1024px){
-    .calBody{
-        width: 25%;
-        height: 75%;
-    }
-    
-}
-
-
-@media (min-width: 1025px) and (max-width: 1280px){
-    .calBody{
-        width: 25%;
-        height: 75%;
-    }
-    
-}
